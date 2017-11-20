@@ -15,17 +15,19 @@ header{
     background-color: cadetblue;
     width: 100%;
     height: 60px;
+    color: white;
 }
 
 nav{
-    outline: 1px solid black;
     position: relative;
     font-size: 24px;
 }
 
 li{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: inline-block;
+    text-decoration: none;
+    margin: 0px 4px;
 }
 
 main{
@@ -37,4 +39,43 @@ main{
 
 section{
     outline: 1px solid wheat;
+    width: 50%;
+    height: 50%;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+
+.left{
+    position: relative;
+    right: 400px;
+}
+
+.rigth{
+    position: relative;
+    left: 400px;
+}
+
+.id{
+    border-radius: 30px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.id:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.sub-rigth{
+    position: relative;
+    left: 1000px;
+}
+
+.box{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
 }
