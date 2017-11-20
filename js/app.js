@@ -16,12 +16,32 @@ window.addEventListener('load', function() {
     containerList.appendChild(icon);
 
     btnSave.addEventListener('click', function() {
+      btnSave.hidden = true;
+      text.hidden = true;
       title.textContent = text.value;
       containerHomework.appendChild(title);
       containerHomework.classList.add('form-click');
-      containerList.classList.add('display');
+      var newText = document.createElement('p');
+      newText.textContent = 'Añadir una tarea';
+      containerHomework.appendChild(newText);
       containerList.classList.remove('form-click');
-      console.log(containerList);
+
+      newText.addEventListener('click', function() {
+        newText.hidden = true;
+        var textArea = document.createElement('textarea');
+        var btnAdd = document.createElement('button');
+        textArea.classList.add('textarea');
+        containerHomework.appendChild(textArea);
+        containerHomework.appendChild(btnAdd);
+        btnAdd.classList.add('button');
+        btnAdd.textContent = 'Añadir';
+
+        btnAdd.addEventListener('click', function() {
+          var taks = document.createElement('p');
+          taks.textContent = textArea.value;
+          containerHomework.appendChild(taks);
+        });
+      });
     });
   });
 });
