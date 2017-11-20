@@ -5,7 +5,7 @@ Realización del ejercicio práctico Trello.
 * vista del archivo original
 
 
-![Trello](assets/images/trello.gif)
+![Trello](assets/images/trello.png)
 
 ### ELementos utilizdos:
  
